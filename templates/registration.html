@@ -1,0 +1,28 @@
+<!-- 
+     Name: Anay Abhijit Joshi 
+ -->
+    
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Register</h1>
+    <form method="post" action="{{ url_for('register') }}" enctype="multipart/form-data">
+        <br>
+        Username: <input type="text" name="username" required><br>
+        <br>
+        Password: <input type="password" name="password" required autocomplete="off"><br>
+        <br>
+        First Name: <input type="text" name="first_name" required><br>
+        <br>
+        Last Name: <input type="text" name="last_name" required><br>
+        <br>
+        Email: <input type="email" name="email" required><br>
+        <br>
+        File for Word Count (optional): <input type="file" name="file"><br>
+        <br>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    <br><br><br>
+    <a href="/login">Login Here</a>
+{% endblock %}

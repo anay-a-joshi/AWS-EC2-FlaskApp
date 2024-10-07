@@ -1,0 +1,28 @@
+<!-- 
+     Name: Anay Abhijit Joshi 
+ -->
+     
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <br>
+    <h1>{{ username }}'s Profile</h1>
+    <br>
+    <p>First Name: {{ first_name }}</p>
+    <p>Last Name: {{ last_name }}</p>
+    <p>Email: {{ email }}</p>
+    <br>
+    <p>Word Count (from Uploaded File): {{ word_count }}</p><br><br>
+
+    {% if file_path %}
+        <p><a href="{{ url_for('download_file', username=username) }}">Download Word Count's File</a></p>
+    {% else %}
+        <p>No file uploaded.</p>
+    {% endif %}
+    <p><a href="/">Sign Out!</a></p><br><br>
+</body>
+</html>
+
