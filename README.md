@@ -1,3 +1,5 @@
+![Profile Views](https://komarev.com/ghpvc/?username=anay-a-joshi&color=green)  
+
 # CS 5165/6065 (Introduction to Cloud Computing) 
 ### Project 2: Flask Web Application on AWS EC2  
 
